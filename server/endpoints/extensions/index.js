@@ -1,4 +1,3 @@
-const { Telemetry } = require("../../models/telemetry");
 const { CollectorApi } = require("../../utils/collectorApi");
 const {
   flexUserRoleValid,
@@ -52,9 +51,7 @@ function extensionEndpoints(app) {
             method: "POST",
             body: request.body,
           });
-        await Telemetry.sendTelemetry("extension_invoked", {
-          type: `${repo_platform}_repo`,
-        });
+
         response.status(200).json(responseFromProcessor);
       } catch (e) {
         console.error(e);
@@ -74,9 +71,7 @@ function extensionEndpoints(app) {
             method: "POST",
             body: request.body,
           });
-        await Telemetry.sendTelemetry("extension_invoked", {
-          type: "youtube_transcript",
-        });
+
         response.status(200).json(responseFromProcessor);
       } catch (e) {
         console.error(e);
@@ -96,9 +91,7 @@ function extensionEndpoints(app) {
             method: "POST",
             body: request.body,
           });
-        await Telemetry.sendTelemetry("extension_invoked", {
-          type: "confluence",
-        });
+
         response.status(200).json(responseFromProcessor);
       } catch (e) {
         console.error(e);
@@ -117,9 +110,7 @@ function extensionEndpoints(app) {
             method: "POST",
             body: request.body,
           });
-        await Telemetry.sendTelemetry("extension_invoked", {
-          type: "website_depth",
-        });
+
         response.status(200).json(responseFromProcessor);
       } catch (e) {
         console.error(e);
@@ -138,9 +129,7 @@ function extensionEndpoints(app) {
             method: "POST",
             body: request.body,
           });
-        await Telemetry.sendTelemetry("extension_invoked", {
-          type: "drupalwiki",
-        });
+
         response.status(200).json(responseFromProcessor);
       } catch (e) {
         console.error(e);
@@ -160,9 +149,7 @@ function extensionEndpoints(app) {
             method: "POST",
             body: request.body,
           });
-        await Telemetry.sendTelemetry("extension_invoked", {
-          type: "obsidian_vault",
-        });
+
         response.status(200).json(responseFromProcessor);
       } catch (e) {
         console.error(e);

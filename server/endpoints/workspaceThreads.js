@@ -5,7 +5,6 @@ const {
   safeJsonParse,
 } = require("../utils/http");
 const { validatedRequest } = require("../utils/middleware/validatedRequest");
-const { Telemetry } = require("../models/telemetry");
 const {
   flexUserRoleValid,
   ROLES,
@@ -34,18 +33,7 @@ function workspaceThreadEndpoints(app) {
           workspace,
           user?.id
         );
-        await Telemetry.sendTelemetry(
-          "workspace_thread_created",
-          {
-            multiUserMode: multiUserMode(response),
-            LLMSelection: process.env.LLM_PROVIDER || "openai",
-            Embedder: process.env.EMBEDDING_ENGINE || "inherit",
-            VectorDbSelection: process.env.VECTOR_DB || "lancedb",
-            TTSSelection: process.env.TTS_PROVIDER || "native",
-            LLMModel: getModelTag(),
-          },
-          user?.id
-        );
+        
 
         await EventLogs.logEvent(
           "workspace_thread_created",

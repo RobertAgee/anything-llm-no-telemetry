@@ -4,7 +4,6 @@ const {
   ROLES,
 } = require("../utils/middleware/multiUserProtected");
 const { validatedRequest } = require("../utils/middleware/validatedRequest");
-const { Telemetry } = require("../models/telemetry");
 
 function agentFlowEndpoints(app) {
   if (!app) return;
@@ -29,12 +28,6 @@ function agentFlowEndpoints(app) {
           return response.status(500).json({
             success: false,
             error: "Failed to save flow",
-          });
-        }
-
-        if (!uuid) {
-          await Telemetry.sendTelemetry("agent_flow_created", {
-            blockCount: config.blocks?.length || 0,
           });
         }
 
@@ -113,10 +106,6 @@ function agentFlowEndpoints(app) {
 
   //       // TODO: Implement flow execution
   //       console.log("Running flow with UUID:", uuid);
-
-  //       await Telemetry.sendTelemetry("agent_flow_executed", {
-  //         variableCount: Object.keys(variables).length,
-  //       });
 
   //       return response.status(200).json({
   //         success: true,

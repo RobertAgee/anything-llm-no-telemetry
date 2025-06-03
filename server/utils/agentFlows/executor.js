@@ -5,7 +5,6 @@ const executeFile = require("./executors/file");
 const executeCode = require("./executors/code");
 const executeLLMInstruction = require("./executors/llm-instruction");
 const executeWebScraping = require("./executors/web-scraping");
-const { Telemetry } = require("../../models/telemetry");
 
 class FlowExecutor {
   constructor() {
@@ -109,7 +108,6 @@ class FlowExecutor {
    * @param {Object} aibitat - The aibitat instance from the agent handler
    */
   async executeFlow(flow, initialVariables = {}, aibitat) {
-    await Telemetry.sendTelemetry("agent_flow_execution_started");
 
     // Initialize variables with both initial values and any passed-in values
     this.variables = {

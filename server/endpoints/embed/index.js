@@ -1,6 +1,5 @@
 const { v4: uuidv4 } = require("uuid");
 const { reqBody, multiUserMode } = require("../../utils/http");
-const { Telemetry } = require("../../models/telemetry");
 const { streamChatWithForEmbed } = require("../../utils/chats/embed");
 const { EmbedChats } = require("../../models/embedChats");
 const {
@@ -44,12 +43,7 @@ function embeddedEndpoints(app) {
           temperature,
           username,
         });
-        await Telemetry.sendTelemetry("embed_sent_chat", {
-          multiUserMode: multiUserMode(response),
-          LLMSelection: process.env.LLM_PROVIDER || "openai",
-          Embedder: process.env.EMBEDDING_ENGINE || "inherit",
-          VectorDbSelection: process.env.VECTOR_DB || "lancedb",
-        });
+
         response.end();
       } catch (e) {
         console.error(e);

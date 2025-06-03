@@ -34,7 +34,6 @@ const SystemSettings = {
   ],
   supportedFields: [
     "logo_filename",
-    "telemetry_id",
     "footer_data",
     "support_email",
 
@@ -198,7 +197,6 @@ const SystemSettings = {
       JWTSecret: !!process.env.JWT_SECRET,
       StorageDir: process.env.STORAGE_DIR,
       MultiUserMode: await this.isMultiUserMode(),
-      DisableTelemetry: process.env.DISABLE_TELEMETRY || "false",
 
       // --------------------------------------------------------
       // Embedder Provider Selection Settings & Configs
