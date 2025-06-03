@@ -483,7 +483,7 @@ const TRANSLATIONS = {
     llm: "انتخاب مدل زبانی",
     embedding: "ترجیحات جاسازی",
     vector: "پایگاه داده برداری",
-    anonymous: "ارسال تله‌متری ناشناس فعال است",
+    anonymous: "Telemetry Permanently Disabled :)",
   },
   connectors: {
     "search-placeholder": null,

@@ -486,7 +486,7 @@ const TRANSLATIONS = {
     llm: "LLM Seçimi",
     embedding: "Gömme Tercihi",
     vector: "Vektör Veritabanı",
-    anonymous: "Anonim Telemetri Etkin",
+    anonymous: "Telemetry Permanently Disabled :)",
   },
   connectors: {
     "search-placeholder": null,

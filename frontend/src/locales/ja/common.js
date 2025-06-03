@@ -489,7 +489,7 @@ const TRANSLATIONS = {
     llm: "LLM選択",
     embedding: "埋め込み設定",
     vector: "ベクターデータベース",
-    anonymous: "匿名テレメトリが有効",
+    anonymous: "Telemetry Permanently Disabled :)",
   },
   connectors: {
     "search-placeholder": "データコネクタを検索",

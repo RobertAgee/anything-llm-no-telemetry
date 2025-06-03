@@ -491,7 +491,7 @@ const TRANSLATIONS = {
     llm: "Sélection LLM",
     embedding: "Préférence d'intégration",
     vector: "Base de données vectorielle",
-    anonymous: "Télémétrie anonyme activée",
+    anonymous: "Telemetry Permanently Disabled :)",
   },
   connectors: {
     "search-placeholder": null,

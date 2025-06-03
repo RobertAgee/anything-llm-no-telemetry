@@ -491,8 +491,8 @@ const TRANSLATIONS = {
     llm: "اختيار نموذج التعلم العميق",
     embedding: "تفضيلات التضمين",
     vector: "قاعدة بيانات المتجهة",
-    anonymous: "تم تمكين القياس المستتر عن بعد ",
-  },
+    anonymous: "Telemetry Permanently Disabled :)",
+    },
   connectors: {
     "search-placeholder": null,
     "no-connectors": null,

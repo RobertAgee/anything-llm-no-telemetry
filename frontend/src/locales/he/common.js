@@ -476,7 +476,7 @@ const TRANSLATIONS = {
     llm: "בחירת LLM",
     embedding: "העדפת הטבעה",
     vector: "בסיס נתונים וקטור",
-    anonymous: "טלמטריה אנונימית מופעלת",
+    anonymous: "Telemetry Permanently Disabled :)",
   },
   connectors: {
     "search-placeholder": null,

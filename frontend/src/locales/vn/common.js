@@ -485,7 +485,7 @@ const TRANSLATIONS = {
     llm: "LLM Selection",
     embedding: "Tùy chọn nhúng",
     vector: "Cơ sở dữ liệu Vector",
-    anonymous: "Anonymous Telemetry Enabled",
+    anonymous: "Telemetry Permanently Disabled :)",
   },
   connectors: {
     "search-placeholder": null,

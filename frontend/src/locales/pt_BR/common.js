@@ -661,7 +661,7 @@ const TRANSLATIONS = {
     llm: "Seleção de LLM",
     embedding: "Preferência de Vínculo",
     vector: "Banco de Dados Vetorial",
-    anonymous: "Telemetria Anônima Ativa",
+    anonymous: "Telemetry Permanently Disabled :)",
   },
   connectors: {
     "search-placeholder": "Buscar conectores",

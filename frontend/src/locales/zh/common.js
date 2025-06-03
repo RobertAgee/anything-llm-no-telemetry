@@ -634,7 +634,7 @@ const TRANSLATIONS = {
     llm: "LLM 选择",
     embedding: "嵌入首选项",
     vector: "向量数据库",
-    anonymous: "启用匿名遥测",
+    anonymous: "Telemetry Permanently Disabled :)",
   },
   connectors: {
     "search-placeholder": "搜索数据连接器",

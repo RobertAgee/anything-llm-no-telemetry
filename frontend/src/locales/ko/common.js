@@ -476,7 +476,7 @@ const TRANSLATIONS = {
     llm: "LLM 선택",
     embedding: "임베딩 기본 설정",
     vector: "벡터 데이터베이스",
-    anonymous: "익명 원격 분석 활성화",
+    anonymous: "Telemetry Permanently Disabled :)",
   },
   connectors: {
     "search-placeholder": null,

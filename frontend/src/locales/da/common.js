@@ -493,7 +493,7 @@ const TRANSLATIONS = {
     llm: "Valg af LLM",
     embedding: "Foretrukken indlejring",
     vector: "Vektordatabase",
-    anonymous: "Anonym telemetri aktiveret",
+    anonymous: "Telemetry Permanently Disabled :)",
   },
   connectors: {
     "search-placeholder": "Søg efter datakonnektorer",

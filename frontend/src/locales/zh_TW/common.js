@@ -467,7 +467,7 @@ const TRANSLATIONS = {
     llm: "LLM 選擇",
     embedding: "向量嵌入偏好設定",
     vector: "向量資料庫",
-    anonymous: "已啟用匿名統計資訊",
+    anonymous: "Telemetry Permanently Disabled :)",
   },
   connectors: {
     "search-placeholder": "搜尋資料連接器",

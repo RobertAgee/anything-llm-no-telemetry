@@ -677,7 +677,7 @@ const TRANSLATIONS = {
     llm: "LLM izvēle",
     embedding: "Iegulšanas preferences",
     vector: "Vektoru datubāze",
-    anonymous: "Anonīmā telemetrija iespējota",
+    anonymous: "Telemetry Permanently Disabled :)",
   },
   connectors: {
     "search-placeholder": "Meklēt datu savienotājus",
